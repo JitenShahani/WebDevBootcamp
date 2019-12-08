@@ -1,0 +1,19 @@
+h1 {
+	color: rgba(0, 200, 100, 0.8);
+}
+
+h4 {
+	background: rgb(255, 100, 80);
+	/* border-color: purple;
+	border-width: 5px;
+	border-style: solid; */
+	
+	border: 5px solid purple;
+}
+
+body {
+	background: pink;
+	/* background: url(https://autodesk.i.lithium.com/t5/image/serverpage/image-id/359183iE99B918926F5676E/image-size/large?v=1.0&px=999);
+	background-repeat: no-repeat;
+	background-size: cover; */
+}

@@ -2,7 +2,7 @@
 
 >Welcome to the Web Developer Bootcamp, the only course you need to learn web development. There are a lot of options for online developer training, but this course is without a doubt the most comprehensive and effective on the market.
 
-## Requirenments
+## Requirements
 * Have a computer with Internet.
 * Be ready to learn an insane amount of awesome stuff.
 * Prepare to build real web apps!
@@ -12,7 +12,6 @@
 * French
 * German [Auto-generated]
 * Hindi
-* Indonesian [Auto-generated]
 * Italian [Auto-generated]
 * Japanese [Auto-generated]
 * Korean

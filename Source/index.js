@@ -4,7 +4,7 @@ function setBackground() {
 	let colorValue = "#636e72"; // default color - white (index = 0)
 
 	if (index == 1)
-		ColorValue = "#55efc4"; // light green
+		colorValue = "#55efc4"; // light green
 	if (index == 2)
 		ColorValue = "#81ecec"; // faded poster
 	if (index == 3)

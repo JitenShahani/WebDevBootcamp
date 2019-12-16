@@ -5,7 +5,7 @@ while (input !== "quit") {
 	if (input === "list") {
 		listTodo();
 	} else if (input === 'new') {
-		addTodo();		
+		addTodo();
 	} else if (input === 'delete') {
 		deleteTodo();
 	}
@@ -30,6 +30,6 @@ function addTodo() {
 
 function deleteTodo() {
 	let index = prompt('Enter index of todo to delete')
-	todo.splice(index, 1);
+	todo.splice(Number(index), 1);
 	console.log('Deleted todo');
 }

@@ -1,3 +1,5 @@
+// @ts-ignore
+
 let colors = ['red', 'orange', 'yellow'];
 
 function myForEach(arr, func) {

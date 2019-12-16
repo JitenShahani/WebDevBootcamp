@@ -1,7 +1,7 @@
 function setBackground() {
 	window.setTimeout("setbackground()", 5000); // 5000 milliseconds delay
 	let index = Math.round(Math.random() * 10);
-	let colorValue = "#636e72"; // default color - white (index = 0)
+	let colorValue = "#636e72"; // default color - (index = 0)
 
 	if (index == 1)
 		colorValue = "#55efc4"; // light green

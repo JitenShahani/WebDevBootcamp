@@ -9,6 +9,7 @@
 
 # Ignore below folder : Jiten
 Sample/
+Source/Backup
 
 # Created by git when using merge tools for conflicts
 *.BACKUP.*

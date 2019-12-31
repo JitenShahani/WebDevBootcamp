@@ -19,6 +19,6 @@
 * Portuguese [Auto-generated]
 * Spanish [Auto-generated]
 * Traditional Chinese
-*Turkish [Auto-generated]
+* Turkish [Auto-generated]
 
 The source code for this course has been laid out in the format of sections. Each section corresponds to each video. Kindly follow the [link](https://www.udemy.com/course/the-web-developer-bootcamp/ "The Web Developer Bootcamp ") to visit this course.

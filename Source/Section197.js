@@ -7,10 +7,14 @@ let colors = [
 	'rgb(255, 0, 255)',
 ];
 
-let pickedColor = colors[3];
+let pickedColor = pickColor();
+let bodyColor = document.body.style.backgroundColor;
 
+//#region Populate variables with DOM selectors
 let squares = document.querySelectorAll('.square');
 let colorDisplay = document.querySelector('#colorDisplay');
+let messageDisplay = document.querySelector('#message');
+//#endregion
 
 colorDisplay.textContent = pickedColor;
 
@@ -24,9 +28,31 @@ for (let i = 0; i < squares.length; i++) {
 		let clickedColor = this.style.backgroundColor;
 		// compare color to pickedColor
 		if (clickedColor === pickedColor) {
-			alert('correct');
+			messageDisplay.textContent = 'Correct!';
+			changeColors(clickedColor);
 		} else {
-			alert('wrong');
+			this.style.backgroundColor = bodyColor;
+			messageDisplay.textContent = 'Try Again';
 		}
 	});
+}
+
+/**
+ * This function changes color of all the squares to the correct color.
+ * @param {string} color
+ */
+function changeColors(color) {
+	// loop through all colors
+	for (let i = 0; i < squares.length; i++) {
+		// change each color to match given color
+		squares[i].style.backgroundColor = pickedColor;
+	}
+}
+
+/**
+ * This function returns random number between 0 to the length of colors array
+ */
+function pickColor() {
+	let randomNumber = Math.floor(Math.random() * colors.length);
+	return colors[randomNumber];
 }

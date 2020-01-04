@@ -1,16 +1,35 @@
 let colors = generateRandomColors(6);
 
-let pickedColor = pickColor();
-let bodyColor = document.body.style.backgroundColor;
-
 //#region Populate variables with DOM selectors
 let squares = document.querySelectorAll('.square');
 let colorDisplay = document.querySelector('#colorDisplay');
 let messageDisplay = document.querySelector('#message');
 let h1 = document.querySelector('h1');
+let resetButton = document.querySelector('#reset');
 //#endregion
 
+let pickedColor = pickColor();
+let bodyColor = document.body.style.backgroundColor;
 colorDisplay.textContent = pickedColor;
+
+//#region Events
+resetButton.addEventListener('click', function() {
+	// reset messageDisplay value to blank
+	messageDisplay.textContent = '';
+	// change h1 background color to body color;
+	h1.style.backgroundColor = bodyColor;
+	// generate all new colors
+	colors = generateRandomColors(6);
+	// pick a new random color from array
+	pickedColor = pickColor();
+	// change colorDisplay to match picked color
+	colorDisplay.textContent = pickedColor;
+	// change colors of squares
+	for (let i = 0; i < squares.length; i++) {
+		squares[i].style.backgroundColor = colors[i];
+	}
+});
+//#endregion
 
 for (let i = 0; i < squares.length; i++) {
 	// add initial colors to squares
@@ -23,6 +42,7 @@ for (let i = 0; i < squares.length; i++) {
 		// compare color to pickedColor
 		if (clickedColor === pickedColor) {
 			messageDisplay.textContent = 'Correct!';
+			resetButton.textContent = 'Play Again?';
 			changeColors(clickedColor);
 			h1.style.backgroundColor = clickedColor;
 		} else {

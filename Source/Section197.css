@@ -33,3 +33,7 @@ h1 {
 	float: left;
 	margin: 1.66%;
 }
+
+.selected {
+	background-color: blue;
+}

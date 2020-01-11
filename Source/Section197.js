@@ -22,7 +22,7 @@ resetButton.addEventListener('click', function() {
 	// reset messageDisplay value to blank
 	messageDisplay.textContent = '';
 	// change h1 background color to body color;
-	h1.style.backgroundColor = bodyColor;
+	h1.style.backgroundColor = 'steelblue';
 	// generate all new colors
 	colors = generateRandomColors(numOfSquares);
 	// pick a new random color from array
@@ -38,6 +38,7 @@ resetButton.addEventListener('click', function() {
 easyBtn.addEventListener('click', function() {
 	easyBtn.classList.add('selected');
 	hardBtn.classList.remove('selected');
+	messageDisplay.textContent = '';
 
 	numOfSquares = 3
 	colors = generateRandomColors(numOfSquares);
@@ -56,6 +57,7 @@ easyBtn.addEventListener('click', function() {
 hardBtn.addEventListener('click', function() {
 	hardBtn.classList.add('selected');
 	easyBtn.classList.remove('selected');
+	messageDisplay.textContent = '';
 
 	numOfSquares = 6;
 	colors = generateRandomColors(numOfSquares);

@@ -34,6 +34,7 @@ h1 {
 }
 
 button {
+	outline: none;
 	border: none;
 	background: none;
 	text-transform: uppercase;

@@ -7,7 +7,7 @@ let pickedColor;
 let bodyColor = document.body.style.backgroundColor;
 //#endregion
 
-//#region Populate variables with DOM selectors
+//#region DOM selectors
 let squares = document.querySelectorAll('.square');
 let colorDisplay = document.querySelector('#colorDisplay');
 let messageDisplay = document.querySelector('#message');
@@ -31,6 +31,9 @@ function init() {
 	reset();
 }
 
+/**
+ * This function removed the selected style and display desired squares depending on difficulty
+ */
 function setupModeButtons() {
 	for (let i = 0; i < modeButtons.length; i++) {
 		modeButtons[i].addEventListener('click', function () {
@@ -44,6 +47,9 @@ function setupModeButtons() {
 	}
 }
 
+/**
+ * This function adds event listener for the squares and display correct or try again message
+ */
 function setupSquares() {
 	for (let i = 0; i < squares.length; i++) {
 		// add click event to squares

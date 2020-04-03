@@ -9,8 +9,8 @@
 
 # Ignore below folder : Jiten
 Sample/
-Source/lib/
 ToDoListProject/
+lib/
 
 # Created by git when using merge tools for conflicts
 *.BACKUP.*

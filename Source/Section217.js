@@ -1,6 +1,7 @@
 // @ts-nocheck
 
-// NOTE: If there is some code written after fade effect, that code will execute before fade completes
+// NOTE: If there is some code written after fade effect, then that code will execute before fade completes.
+
 // NOTE: To make sure, write code within a function
 
 // NOTE: Remove method removes an element from the DOM.

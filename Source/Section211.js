@@ -3,7 +3,7 @@
 // NOTE: text function behaves like JavaScript's textContent.
 // NOTE: html function behaves like JavaScript's innerHtml.
 
-// NOTE: If second parameter is not given that attr function will work like getter and will display the value of that attribute.
+// NOTE: If second parameter is not given than attr function will work like getter and will display the value or type of that attribute depending on the element.
 
 // NOTE: Val function extracts the value of an input element. It is a wrapper of JavaScript's value.
 // NOTE: If the function is called without parameter, then it will return the value of input element.

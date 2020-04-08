@@ -9,7 +9,8 @@
 
 # Ignore below folder : Jiten
 Sample/
-ToDoListProject/
+ToDoListProject/assets/js/lib/
+PatatapClone/assets/js/lib/
 lib/
 
 # Created by git when using merge tools for conflicts

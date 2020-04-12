@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Paper.js Exercise </title>
+
+	<link rel="stylesheet" href="Section235.css">
+
+	<script src="lib/paper-full.js"></script>
+	<script type="text/paperscript" canvas="myCanvas">
+		// NOTE: first argument is Row, second argument is Column and third argument is radius of point.
+
+		for (var x = 0; x < 1000; x+= 100) {
+			for (var y = 0; y < 1000; y+= 100) {
+				new Path.Circle(new Point(x, y), 10).fillColor = 'yellow';
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<canvas id="myCanvas"></canvas>
+</body>
+
+</html>

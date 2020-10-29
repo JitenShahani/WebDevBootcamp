@@ -1,4 +1,5 @@
 // NOTE: Default color is set to Honedew
+// TODO: Update code to change background color evry time the page is refreshed.
 
 function setBackground() {
 	window.setTimeout('setbackground()', 5000); // 5000 milliseconds delay

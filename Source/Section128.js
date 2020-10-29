@@ -12,7 +12,7 @@ if (age < 18) {
 let myAge = 21;
 
 if (myAge < 0) {
-	console.log('Come back once you\'re you of the womb');
+	console.log('Come back once you\'re out of the womb');
 }
 
 if (myAge === 21) {
